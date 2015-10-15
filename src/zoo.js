@@ -68,6 +68,7 @@ Zoo.prototype.isDupe = function(newAnimal) {
 
   var check = this.animals.every(function(za){
     // the Animal objs are the same if they share these 3 properties
+    // za reps an animal in this.animals
     return (za.name === newAnimal.name) && (za.age === newAnimal.age) && (za.kind === newAnimal.kind);
   });
 
